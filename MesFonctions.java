@@ -2,9 +2,9 @@ public class MesFonctions{
 
 
 public int minimum(int a, int b){
-	return Math.min(a,b);
+		return Math.min(a,b);
+	}
 
-   }
 public boolean estPalindrome(String ch){
 	String original=ch;
 	String reverse="";
@@ -14,6 +14,18 @@ public boolean estPalindrome(String ch){
 		  reverse = reverse + original.charAt(i); 
 		}
 	return  original.equals(reverse);
-   }
+   	}
 
+
+	public int maximum(int a, int b){
+		return Math.max(a,b);
+
+	}
+
+	public int factorielle(int n){
+		if(n==0){
+		  return 1;
+		}else
+		  return (n*factorielle(n-1));
+	}
 }
