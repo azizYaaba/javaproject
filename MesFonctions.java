@@ -6,14 +6,14 @@ public int minimum(int a, int b){
 
    }
 public boolean estPalindrome(String ch){
-	original=ch;
-	reverse="";
+	String original=ch;
+	String reverse="";
 	int taille=original.length();
 	for(int i=taille-1;i>=0;i--)
 		{
-		  reverse=reverse+original.charArt(i)
+		  reverse = reverse + original.charAt(i); 
 		}
-	return  origin.equals(reverse);
+	return  original.equals(reverse);
    }
 
 }
